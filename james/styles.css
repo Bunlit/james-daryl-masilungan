@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background: #f5f5f5;
+}
+
+#site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #fff;
+    border-bottom: 1px solid #0077ff;
+}
+
+.brand-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-cta {
+    background: #2563eb;
+    color: white !important;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+
+
+#hero {
+    min-height: 450px;
+    padding: 80px 60px;
+    background: #eaf7ff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.badge {
+    color: #2563eb;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero-title {
+    max-width: 800px;
+    font-size: 44px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    max-width: 700px;
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: white;
+}
+
+.btn-secondary {
+    background: white;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+}
+
+#main-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px;
+}
+
+#courses {
+    background: white;
+    padding: 40px;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.course-card {
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.category {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card-title {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.card-text {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card-meta {
+    justify-content: space-between;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.card-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#announcements {
+    margin-top: 30px;
+    padding: 30px;
+    background: #fff;
+    border-left: 4px solid #2563eb;
+}
+
+#announcements h3 {
+    margin-bottom: 15px;
+}
+
+#announcements ul {
+    padding-left: 20px;
+}
+
+#announcements li {
+    margin-bottom: 10px;
+}
+
+#site-footer {
+    padding: 30px 60px;
+    background: #2563eb;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+#student-documentation {
+    margin: 50px auto;
+    max-width: 1200px;
+    padding: 30px;
+    background: white;
+}
+
+#student-documentation table {
+    margin-top: 20px;
+}
+
+#student-documentation th {
+    background: #eee;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+
+    #site-header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    #main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #hero {
+        padding: 60px 25px;
+    }
+
+    .hero-title {
+        font-size: 34px;
+    }
+
+    #main-content {
+        padding: 30px 20px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #site-footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
